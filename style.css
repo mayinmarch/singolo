@@ -1,4 +1,22 @@
+@font-face {
+    font-family: Lato-Light;
+    src: url(assets/fonts/Lato-Light.ttf);
+}
 
+@font-face {
+    font-family: Lato-Bold;
+    src: url(assets/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url(assets/fonts/Lato-Black.ttf);
+}
 
 * {
     margin: 0;
@@ -8,6 +26,9 @@
 body {
     width: 1020px;
     margin: 0 auto;
+
+    font-family: Lato-Regular, Arial, Helvetica, sans-serif;
+    color: #666d89;
 }
 
 header {
@@ -19,15 +40,140 @@ header {
 }
 
 .slider {
-    height: 594px;
-    
+    width: 100%;
+    height: 588px;
+    padding-bottom: 6px;
+
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+
     background-color: #f06c64;
     border-bottom: solid 6px #ea676b;
 }
 
+
+
+h1 {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: baseline;
+    align-self: center;
+    justify-content: space-between;
+
+
+    font-family: Lato-Regular, Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+
+.logo {
+    font-size: 25px;
+}
+
+.logo span::after {
+    content: "*";
+    color: #f06c64;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row;
+
+    font-size: 12px;
+}
+
+nav li {
+    list-style-type: none;
+
+    cursor: pointer;
+}
+
+.menu li + li::before {
+    /*width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #fff;*/
+    content: '·';
+    padding: 0 15px;
+    color: #494e62;
+}
+
+nav li:hover {
+    color: #f06c64;
+}
+
+
+
 .descript {
     height: 495px;
+    display: flex;
+    flex-direction: column;
     
     background-color: #f2f2f2;
     border-bottom: solid 6px #ffffff;
 }
+
+.service-descript {
+    padding: 60px 40px 45px 40px
+}
+
+.service-descript h2 {
+    padding-bottom: 18px;
+   
+    font-family: Lato-Black;
+    font-size: 30px;
+    letter-spacing: -0.2px;
+}
+
+.service-descript p {
+    font-family: Lato-Light;
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    line-height: 1.7;
+}
+
+.service-points {
+    padding: 0 20px 0 40px;
+    height: 246px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.service-points article {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    width: 300px;
+
+    text-align: justify;
+    text-overflow: ellipsis;
+
+}
+
+.service-points h3 {
+    margin-bottom: 6px;
+
+    font-family: Lato-Black;
+    font-size: 18px;
+    letter-spacing: 0.02px;
+}
+
+.service-points p {
+    font-family: Lato-Regular;
+    font-size: 12px;
+    line-height: 1.8;
+    hyphens: auto;
+}
+
+
+
+ 
