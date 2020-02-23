@@ -53,6 +53,14 @@ header {
     border-bottom: solid 6px #ea676b;
 }
 
+.arrow {
+    font-size: 45px;
+    color: #ca4549;
+}
+
+.arrow:hover {
+    color: #f2f2f2;
+}
 
 
 h1 {
