@@ -47,6 +47,15 @@ h2 {
     font-size: 3rem;;
 }
 
+h3 {
+    font-family: Lato-Black, Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
 .description-text {
     font-family: Lato-Light, Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
@@ -76,14 +85,16 @@ h2 {
 
 }
 
+.header, .portfolio, .portfolio .wrapper {
+    background-color: #2d303a;
+    border-color: #323746;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 89px;
-    
-    background-color: #2d303a;
-    border-color: #323746;
 }
 
 .header__navigation {
@@ -125,15 +136,20 @@ h2 {
     color: #f06c64;
 }
 
+.slider__wrapper, .contact-us {
+    background-color: #f06c64;
+}
+
+.slider__wrapper, .contact-us .wrapper {
+    border-color: #ea676b;
+}
+
 .slider__wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 52px 40px 60px;
-
-    background-color: #f06c64;
-    border-color: #ea676b;
 }
 
 .slider_picture {
@@ -145,15 +161,20 @@ h2 {
     margin: 0 35px;
 }
 
-.description {
+.description, .about-us {
     background-color: #f2f2f2;
 }
 
-.layout-3-column, .layout-4-column {
+.description .wrapper, .about-us .wrapper {
+    border-color: white;
+}
+
+.layout-2-column, .layout-3-column, .layout-4-column {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-between;
 }
 
 .layout-3-column {
@@ -168,9 +189,7 @@ h2 {
 }
 
 .layout-3-column__title {
-    font-family: Lato-Black, Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .layout-3-column__description {
@@ -180,10 +199,26 @@ h2 {
 
 }
 
+.description .wrapper {
+    padding-bottom: 28px;
+}
+
 .service__content {
     padding-left: 20px;
     text-align: justify;
     text-overflow: ellipsis;
+}
+
+.service {
+    margin-bottom: 35px;
+}
+
+.service__title {
+    line-height: 0.7;
+}
+
+.service__description {
+    line-height: 1.7;
 }
 
 .our-services__description {
@@ -195,73 +230,96 @@ h2 {
     flex-direction: column;
 }
 
-/*
-
-
-
-
-.descript {
-    height: 495px;
-    display: flex;
-    flex-direction: column;
-    
-    background-color: #f2f2f2;
-    border-bottom: solid 6px #ffffff;
+.portfolio-work-container {
+    height: 603px;
+    overflow: auto;
 }
 
-.service-descript {
-    padding: 60px 40px 45px 40px
-}
-
-.service-descript h2 {
-    padding-bottom: 18px;
-   
-    font-family: Lato-Black;
-    font-size: 30px;
+.portfolio__link {
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 3px 6px;
+    margin: 12px 12px 18px 0;
+    font-family: Lato-Regular;
     letter-spacing: -0.2px;
 }
 
-.service-descript p {
-    font-family: Lato-Light;
-    font-size: 18px;
-    letter-spacing: 0.15px;
+.portfolio__link:hover {
+    color: white;
+    border-color: white;
+}
+
+.about-us .wrapper {
+    padding-top: 54px;
+    padding-bottom: 57px;
+}
+
+.about-us__title {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.employee__name {
+    margin: 10px 0 6px;
+    line-height: 1.8;
+    text-overflow: ellipsis;
+}
+
+.employee__description {
     line-height: 1.7;
 }
 
-.service-points {
-    padding: 0 20px 0 40px;
-    height: 246px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.employee__contacts {
+    margin-top: 24px;
 }
 
-.service-points article {
-    display: grid;
-    grid-template-columns: 1fr 220px;
-    width: 300px;
-
-    text-align: justify;
-    text-overflow: ellipsis;
-
+.emloyee-container {
+    margin-top: 46px;
 }
 
-.service-points h3 {
-    margin-bottom: 6px;
-
-    font-family: Lato-Black;
-    font-size: 18px;
-    letter-spacing: 0.02px;
+.contact__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 9px;
+    border: 1px solid;
+    border-radius: 50%;
 }
 
-.service-points p {
-    font-family: Lato-Regular;
-    font-size: 12px;
-    line-height: 1.8;
-    hyphens: auto;
+.contact_icon {
+    height: 1.4rem;
 }
-*/
 
+.contact-us .wrapper {
+    color: #f0d8d9;
+}
 
+.contact-us-container {
+    margin-top: 44px;
+}
 
- 
+.layout-1-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__form form{
+    width: 620px;
+}
+
+.contact-info {
+    width: 32%;
+}
+
+.contact-us__form input, .contact-us__form textarea {
+    border-style: none;
+    margin-bottom: 16px;
+    padding: 12px 20px;
+    background-color: #d6564f;
+    color: #f48c8f;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
