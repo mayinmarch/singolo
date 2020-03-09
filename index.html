@@ -1,124 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singolo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class=logo>
             <h1>Singolo</h1>
-            <span class='logo__content'>Singolo</span>
+            <span class="logo__content">Singolo</span>
         </div>
         <nav class="header__navigation">
             <ul class="navigation navigation__horizontal">
-                <li class="navigation__link">home</li>
-                <li class="navigation__link">services</li>
-                <li class="navigation__link">portfolio</li>
-                <li class="navigation__link">about</li>
-                <li class="navigation__link">contact</li>
+                <li class="navigation__link"><a href="#home" class="nav__link">home</a></li>
+                <li class="navigation__link"><a href="#services" class="nav__link">services</a></li>
+                <li class="navigation__link"><a href="#portfolio" class="nav__link">portfolio</a></li>
+                <li class="navigation__link"><a href="#about" class="nav__link">about</a></li>
+                <li class="navigation__link"><a href="#contact" class="nav__link">contact</a></li>
             </ul>
         </nav>
     </header>
     <section class="slider">
         <div class="wrapper slider__wrapper">
-            <div class="arrow arrow_left">
-                <object type='image/svg+xml' data="assets/chev_left.svg" class=arrow_icon>
-                    Your browser does not support SVG
-                </object>
+            <div class="arrow arrow-left">
             </div>
             <div class="slider_picture">
-                <img src='assets/phone_vertical.png' alt="vertical phone">
-                <img src='assets/phone_horizontal.png' alt="horizontal phone">
+                <img src="assets/phone_vertical.png" alt="vertical phone">
+                <img src="assets/phone_horizontal.png" alt="horizontal phone">
             </div>
-            <div class="arrow arrow_right">
-                <object type='image/svg+xml' data="assets/chev_right.svg" class=arrow_icon>
-                    Your browser does not support SVG
-                </object>
+            <div class="arrow arrow-right">
+
             </div>
         </div>
     </section>
-    <section class="description">
+    <section class="description" id="services">
         <div class="wrapper">
             <h2 class="our-services__title">Our Services</h2>
-            <p class='our-services__description description-text'>
+            <p class="our-services__description description-text">
                 Fusce dapibus, tellus ac cursus commodo,
                 tortor mauris condimentum. Duis mollis,
                 non commodo luctus, nisi erat porttitor ligula,
                 eget lacinia odio sem nec elit. Fusce dapibus,
                 tellus ac cursus commodo, tortor mauris condimentum nibh.
             </p>
-            <div class='layout-3-column services-container'>
+            <div class="layout-3-column services-container">
                 <div class="service layout-3-column__block">
-                    <div class='service_icon'>
-                        <img src="assets/pen.png" alt="Custom Design" >
+                    <div class="service_icon">
+                        <img src="assets/pen.png" alt="Custom Design">
                     </div>
-                    <div class='service__content'>
-                        <h3 class='service__title layout-3-column__title'>Custom Design</h3>
-                        <p class='service__description layout-3-column__description'>
-                            Curabitur vestibulum eget mauris quis laoreet. 
-                           Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+                    <div class="service__content">
+                        <h3 class="service__title layout-3-column__title">Custom Design</h3>
+                        <p class="service__description layout-3-column__description">
+                            Curabitur vestibulum eget mauris quis laoreet.
+                            Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
                         </p>
                     </div>
                 </div>
                 <div class="service layout-3-column__block">
-                    <div class='service_icon'>
-                        <img src="assets/bolb.png" alt="Inovative Ideas" >
+                    <div class="service_icon">
+                        <img src="assets/bolb.png" alt="Inovative Ideas">
                     </div>
-                    <div class='service__content'>
-                        <h3 class='service__title layout-3-column__title'>Inovative Ideas</h3>
-                        <p class='service__description layout-3-column__description'>
-                            Quisque luctus, quam eget molestie commodo, 
+                    <div class="service__content">
+                        <h3 class="service__title layout-3-column__title">Inovative Ideas</h3>
+                        <p class="service__description layout-3-column__description">
+                            Quisque luctus, quam eget molestie commodo,
                             lacus purus cursus purus, nec rutrum tellus dolor id lorem.
                         </p>
                     </div>
                 </div>
                 <div class="service layout-3-column__block">
-                    <div class='service_icon'>
-                        <img src="assets/heart.png" alt="Love Is The Answer" >
+                    <div class="service_icon">
+                        <img src="assets/heart.png" alt="Love Is The Answer">
                     </div>
-                    <div class='service__content'>
-                        <h3 class='service__title layout-3-column__title'>Love Is The Answer</h3>
-                        <p class='service__description layout-3-column__description'>
-                            Nulla sed nunc et tortor luctus faucibus. 
+                    <div class="service__content">
+                        <h3 class="service__title layout-3-column__title">Love Is The Answer</h3>
+                        <p class="service__description layout-3-column__description">
+                            Nulla sed nunc et tortor luctus faucibus.
                             Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
                         </p>
                     </div>
                 </div>
                 <div class="service layout-3-column__block">
-                    <div class='service_icon'>
-                        <img src="assets/phone.png" alt="Responsive Layout" >
+                    <div class="service_icon">
+                        <img src="assets/phone.png" alt="Responsive Layout">
                     </div>
-                    <div class='service__content'>
-                        <h3 class='service__title layout-3-column__title'>Responsive Layout</h3>
-                        <p class='service__description layout-3-column__description'>
-                            Sed porttitor placerat rhoncus. 
+                    <div class="service__content">
+                        <h3 class="service__title layout-3-column__title">Responsive Layout</h3>
+                        <p class="service__description layout-3-column__description">
+                            Sed porttitor placerat rhoncus.
                             In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.
                         </p>
                     </div>
                 </div>
                 <div class="service layout-3-column__block">
-                    <div class='service_icon'>
-                        <img src="assets/bubble.png" alt='24/7 Support'>
+                    <div class="service_icon">
+                        <img src="assets/bubble.png" alt="24/7 Support">
                     </div>
-                    <div class='service__content'>
-                        <h3 class='service__title layout-3-column__title'>24 / 7 Support</h3>
-                        <p class='service__description layout-3-column__description'>
-                            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. 
+                    <div class="service__content">
+                        <h3 class="service__title layout-3-column__title">24 / 7 Support</h3>
+                        <p class="service__description layout-3-column__description">
+                            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
                             Nulla a sem erat. Pellentesque egestas venenatis lorem .
                         </p>
                     </div>
                 </div>
                 <div class="service layout-3-column__block">
-                    <div class='service_icon'>
-                        <img src="assets/star.png" alt='Fell Like A Star'>
+                    <div class="service_icon">
+                        <img src="assets/star.png" alt="Fell Like A Star">
                     </div>
-                    <div class='service__content'>
-                        <h3 class='service__title layout-3-column__title'>Feel Like A Star</h3>
-                        <p class='service__description layout-3-column__description'>
-                            Quisque hendrerit purus dapibus, ornare nibh vitae, 
+                    <div class="service__content">
+                        <h3 class="service__title layout-3-column__title">Feel Like A Star</h3>
+                        <p class="service__description layout-3-column__description">
+                            Quisque hendrerit purus dapibus, ornare nibh vitae,
                             viverra nibh. Fusce vitae aliquam tellus.
                         </p>
                     </div>
@@ -126,11 +123,12 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h2 class="portfolio__title">Portfolio</h2>
-            <p class='portfolio__description description-text'>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class='portfolio__navigation'>
+            <p class="portfolio__description description-text">Duis mollis, est non commodo luctus, nisi erat porttitor
+                ligula, eget lacinia odio sem nec elit.</p>
+            <div class="portfolio__navigation">
                 <ul class="porfolio__links navigation__horizontal">
                     <li class="portfolio__link">All</li>
                     <li class="portfolio__link">Web Design</li>
@@ -138,84 +136,88 @@
                     <li class="portfolio__link">Artwork</li>
                 </ul>
             </div>
-            <div class='layout-4-column portfolio-work-container'>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img1.png' alt='art-name'>
+            <div class="layout-4-column portfolio-work-container">
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img1.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img2.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img2.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img3.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img3.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img4.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img4.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img5.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img5.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img6.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img6.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img7.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img7.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img8.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img8.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img9.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img9.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img10.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img10.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img11.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img11.png" alt="art-name">
                 </div>
-                <div class='porfolio-work__block'>
-                    <img class="porfolio-work" src='assets/img12.png' alt='art-name'>
+                <div class="porfolio-work__block">
+                    <img class="porfolio-work" src="assets/img12.png" alt="art-name">
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <div class="wrapper">
             <h2 class="about-us__title">About Us</h2>
-            <p class="about-us__description description-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, 
+            <p class="about-us__description description-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                condimentum.
+                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
+                dapibus,
                 tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <div class='layout-3-column emloyee-container'>
+            <div class="layout-3-column emloyee-container">
                 <div class="employee layout-3-column__block">
                     <img class="employee__photo" src="assets/author_photo_1.png" alt="Adam Jensen">
                     <div class="employee__content">
                         <h3 class="employee__name layout-3-column__title">Adam Jensen</h3>
-                        <p class="employee__description layout-3-column__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
-                             nec rutrum tellus dolor id lorem. </p>
+                        <p class="employee__description layout-3-column__description">Quisque luctus, quam eget molestie
+                            commodo, lacus purus cursus purus,
+                            nec rutrum tellus dolor id lorem. </p>
                         <ul class="employee__contacts navigation__horizontal">
                             <li class="employee__contact">
-                                <a class='contact__link' href='https://www.facebook.com/'>                                    
-                                    <object type='image/svg+xml' data="assets/facebook.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                                <a class="contact__link" href="https://www.facebook.com/">
+                                    <object type="image/svg+xml" data="assets/facebook.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
                             </li>
                             <li class="employee__contact">
-                                <a class='contact__link' href='mailto:AJensen@gmail.com'>
-                                    <object type='image/svg+xml' data="assets/google+.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                                <a class="contact__link" href="mailto:AJensen@gmail.com">
+                                    <object type="image/svg+xml" data="assets/google+.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
                             </li>
                             <li class="employee__contact">
-                                <a class='contact__link' href='https://www.twitter.com/'>
-                                    <object type='image/svg+xml' data="assets/twitter.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                                <a class="contact__link" href="https://www.twitter.com/">
+                                    <object type="image/svg+xml" data="assets/twitter.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
-                            </li> <li class="employee__contact">
-                                <a class='contact__link' href='https://www.linkedin.com/'>
-                                    <object type='image/svg+xml' data="assets/linkedin.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                            </li>
+                            <li class="employee__contact">
+                                <a class="contact__link" href="https://www.linkedin.com/">
+                                    <object type="image/svg+xml" data="assets/linkedin.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
                             </li>
@@ -226,33 +228,35 @@
                     <img class="employee__photo" src="assets/author_photo_2.png" alt="Adam Jensen">
                     <div class="employee__content">
                         <h3 class="employee__name layout-3-column__title">Desmond Miles</h3>
-                        <p class="employee__description layout-3-column__description">Curabitur vestibulum eget mauris quis laoreet. 
+                        <p class="employee__description layout-3-column__description">Curabitur vestibulum eget mauris
+                            quis laoreet.
                             Phasellus in quam laoreet, viverra lacus ut, ultrices velit. </p>
                         <ul class="employee__contacts navigation__horizontal">
                             <li class="employee__contact">
-                                <a class='contact__link' href='https://www.facebook.com/'>
-                                    <object type='image/svg+xml' data="assets/facebook.svg" class=contact_icon>
+                                <a class="contact__link" href="https://www.facebook.com/">
+                                    <object type="image/svg+xml" data="assets/facebook.svg" class=contact_icon>
                                         Your browser does not support SVG
                                     </object>
                                 </a>
                             </li>
                             <li class="employee__contact">
-                                <a class='contact__link' href='mailto:DMilesn@gmail.com'> 
-                                    <object type='image/svg+xml' data="assets/google+.svg" class=contact_icon>
-                                    Your browser does not support SVG
-                                    </object>
-                            </a>
-                            </li>
-                            <li class="employee__contact">
-                                <a class='contact__link' href='https://www.twitter.com/'> 
-                                    <object type='image/svg+xml' data="assets/twitter.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                                <a class="contact__link" href="mailto:DMilesn@gmail.com">
+                                    <object type="image/svg+xml" data="assets/google+.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
-                            </li> <li class="employee__contact">
-                                <a class='contact__link' href='https://www.linkedin.com/'> 
-                                    <object type='image/svg+xml' data="assets/linkedin.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                            </li>
+                            <li class="employee__contact">
+                                <a class="contact__link" href="https://www.twitter.com/">
+                                    <object type="image/svg+xml" data="assets/twitter.svg" class=contact_icon>
+                                        Your browser does not support SVG
+                                    </object>
+                                </a>
+                            </li>
+                            <li class="employee__contact">
+                                <a class="contact__link" href="https://www.linkedin.com/">
+                                    <object type="image/svg+xml" data="assets/linkedin.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
                             </li>
@@ -263,33 +267,35 @@
                     <img class="employee__photo" src="assets/author_photo_3.png" alt="Adam Jensen">
                     <div class="employee__content">
                         <h3 class="employee__name layout-3-column__title">Scolara Visari</h3>
-                        <p class="employee__description layout-3-column__description">Nulla sed nunc et tortor luctus faucibus.
-                             Morbi at aliquet turpis, et consequat felis. Quisque condimentum. </p>
+                        <p class="employee__description layout-3-column__description">Nulla sed nunc et tortor luctus
+                            faucibus.
+                            Morbi at aliquet turpis, et consequat felis. Quisque condimentum. </p>
                         <ul class="employee__contacts navigation__horizontal">
                             <li class="employee__contact">
-                                <a class='contact__link' href='https://www.facebook.com/'>                                    
-                                    <object type='image/svg+xml' data="assets/facebook.svg" class=contact_icon>
-                                    Your browser does not support SVG
-                                    </object>
-                            </a>
-                            </li>
-                            <li class="employee__contact">
-                                <a class='contact__link' href='mailto:SVisari@gmail.com'>
-                                    <object type='image/svg+xml' data="assets/google+.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                                <a class="contact__link" href="https://www.facebook.com/">
+                                    <object type="image/svg+xml" data="assets/facebook.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
                             </li>
                             <li class="employee__contact">
-                                <a class='contact__link' href='https://www.twitter.com/'>
-                                    <object type='image/svg+xml' data="assets/twitter.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                                <a class="contact__link" href="mailto:SVisari@gmail.com">
+                                    <object type="image/svg+xml" data="assets/google+.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
-                            </li> <li class="employee__contact">
-                                <a class='contact__link' href='https://www.linkedin.com/'> 
-                                    <object type='image/svg+xml' data="assets/linkedin.svg" class=contact_icon>
-                                    Your browser does not support SVG
+                            </li>
+                            <li class="employee__contact">
+                                <a class="contact__link" href="https://www.twitter.com/">
+                                    <object type="image/svg+xml" data="assets/twitter.svg" class=contact_icon>
+                                        Your browser does not support SVG
+                                    </object>
+                                </a>
+                            </li>
+                            <li class="employee__contact">
+                                <a class="contact__link" href="https://www.linkedin.com/">
+                                    <object type="image/svg+xml" data="assets/linkedin.svg" class=contact_icon>
+                                        Your browser does not support SVG
                                     </object>
                                 </a>
                             </li>
@@ -299,19 +305,20 @@
             </div>
         </div>
     </section>
-    <section class='contact-us'>
+    <section class="contact-us" id="contact">
         <div class="wrapper">
             <h2 class="contact-us__title">Get a Quote</h2>
-            <p class="contact-us__description description-text">Fusce dapibus, tellus ac cursus commodo, 
-                tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p class="contact-us__description description-text">Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="layout-2-column contact-us-container">
                 <div class="contact-us__form">
                     <form action method="POST">
                         <div class="contact-us layout-1-column">
                             <input type="text" name="name" required placeholder="Name (Required)">
                             <input type="email" name="email" required placeholder="Email (Required)">
-                            <input type='text' name='subject' placeholder="Subject">
-                        <textarea name="question" placeholder="Describe your project in detail..." ></textarea>
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea name="question" placeholder="Describe your project in detail..."></textarea>
                         </div>
                         <div class="contact-us__button">
                             <button type="submit" class="button button_colored">Send</button>
@@ -320,64 +327,67 @@
                 </div>
                 <div class="contact-info">
                     <h3 class="contact-info__title">Contact Information</h3>
-                    <p class='contact-info__description'>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. 
-                        Fusce vitae aliquam tellus. Proin sit amet volutpat libero. 
+                    <p class="contact-info__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                        nibh.
+                        Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
                         Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis</p>
                     <div class="contact-info__contacts">
                         <div class="contact__block">
-                            <object type='image/svg+xml' data="assets/location.svg" class=contact-info_icon>
+                            <object type="image/svg+xml" data="assets/location.svg" class=contact-info_icon>
                                 Your browser does not support SVG
                             </object>
-                            <a class='contact-info__link' href='#'>Elm St. 14/05 Lost City</a>
+                            <a class="contact-info__link" href="#">Elm St. 14/05 Lost City</a>
                         </div>
                         <div class="contact__block">
-                                <object type='image/svg+xml' data="assets/phone.svg" class=contact-info_icon>
-                                    Your browser does not support SVG
-                                </object>
-                                <a class='contact-info__link' href='tel:8035283318635'>03528 331 86 35</a>
-                        </div>
-                        <div class="contact__block">
-                            <object type='image/svg+xml' data="assets/mail.svg" class=contact-info_icon>
+                            <object type="image/svg+xml" data="assets/phone.svg" class=contact-info_icon>
                                 Your browser does not support SVG
                             </object>
-                            <a class='contact-info__link' href='mailto:info@singolo.com'>info@singolo.com</a>
-                    </div>
+                            <a class="contact-info__link" href="tel:8035283318635">03528 331 86 35</a>
+                        </div>
+                        <div class="contact__block">
+                            <object type="image/svg+xml" data="assets/mail.svg" class=contact-info_icon>
+                                Your browser does not support SVG
+                            </object>
+                            <a class="contact-info__link" href="mailto:info@singolo.com">info@singolo.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class='footer'>
-        <span class='footer-copyright'>© Copyright 2013</span>
+    <footer class="footer">
+        <span class="footer-copyright">© Copyright 2013</span>
         <ul class="footer__contacts navigation__horizontal">
             <li class="footer__contact">
-                <a class='contact__link' href='https://www.facebook.com/'>                                    
-                    <object type='image/svg+xml' data="assets/facebook.svg" class=contact_icon>
-                    Your browser does not support SVG
-                    </object>
-            </a>
-            </li>
-            <li class="footer__contact">
-                <a class='contact__link' href='mailto:info@singolo.com'>
-                    <object type='image/svg+xml' data="assets/google+.svg" class=contact_icon>
-                    Your browser does not support SVG
+                <a class="contact__link" href="https://www.facebook.com/">
+                    <object type="image/svg+xml" data="assets/facebook.svg" class=contact_icon>
+                        Your browser does not support SVG
                     </object>
                 </a>
             </li>
             <li class="footer__contact">
-                <a class='contact__link' href='https://www.twitter.com/'>
-                    <object type='image/svg+xml' data="assets/twitter.svg" class=contact_icon>
-                    Your browser does not support SVG
+                <a class="contact__link" href="mailto:info@singolo.com">
+                    <object type="image/svg+xml" data="assets/google+.svg" class=contact_icon>
+                        Your browser does not support SVG
                     </object>
                 </a>
-            </li> <li class="footer__contact">
-                <a class='contact__link' href='https://www.linkedin.com/'> 
-                    <object type='image/svg+xml' data="assets/linkedin.svg" class=contact_icon>
-                    Your browser does not support SVG
+            </li>
+            <li class="footer__contact">
+                <a class="contact__link" href="https://www.twitter.com/">
+                    <object type="image/svg+xml" data="assets/twitter.svg" class=contact_icon>
+                        Your browser does not support SVG
+                    </object>
+                </a>
+            </li>
+            <li class="footer__contact">
+                <a class="contact__link" href="https://www.linkedin.com/">
+                    <object type="image/svg+xml" data="assets/linkedin.svg" class=contact_icon>
+                        Your browser does not support SVG
                     </object>
                 </a>
             </li>
         </ul>
     </footer>
 </body>
+
 </html>
