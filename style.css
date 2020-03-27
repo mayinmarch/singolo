@@ -29,6 +29,8 @@ body {
 
     font-family: Lato-Regular, Arial, Helvetica, sans-serif;
     color: #666d89;
+
+    scroll-behavior: smooth;
 }
 * {
     margin: 0;
@@ -67,11 +69,11 @@ a:visited {
     line-height: 1.6;
 }
 
-.header,  .wrapper {
+.header_wrapper,  .wrapper {
     border-bottom: solid 6px;
 }
 
-.header, .footer {
+.header_wrapper, .footer {
     padding: 0 40px;
 }
 
@@ -100,13 +102,22 @@ a:visited {
 }
 
 .header {
+    height: 89px;
+}
+
+.header_wrapper {
+    width:940px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 89px;
+    background-color: #2d303a;
+    border-color: #323746;
+    position: fixed;
 }
 
 .header__navigation {
+
     margin-top: 10px;
 }
 
@@ -148,6 +159,12 @@ a:visited {
 .nav__link:hover {
     color: #f06c64;
 }
+
+.navigation__link .active {
+    color: #f06c64;
+}
+
+
 
 .slider__wrapper, .contact-us {
     background-color: #f06c64;
@@ -290,6 +307,19 @@ a:visited {
     border-color: white;
 }
 
+.porfolio-work {
+    border: 5px solid rgba(255,255,255,0);
+}
+
+.work-selected {
+    border: 5px solid #F06C64;
+}
+
+.link__selected {
+    color: white;
+    border-color: white;
+}
+
 .about-us .wrapper {
     padding-top: 54px;
     padding-bottom: 57px;
@@ -412,7 +442,7 @@ a:visited {
     justify-self: center;
 }
 
-.contact-us__button .button {
+.contact-us__button .submit-button, .close-button{
     font-family: Lato-Black, Arial, Helvetica, sans-serif;
     height: 31px;
     color: #d6564f;
@@ -424,7 +454,7 @@ a:visited {
     border-radius: 4px;
 }
 
-.contact-us__button .button:hover {
+.contact-us__button .submit-button:hover, .close-button:hover{
     background-color: #f48c8f;
     color: #f0d8d9;
     cursor: pointer;
@@ -439,4 +469,57 @@ a:visited {
     padding-right: 30px;
 
     font-size: 1.2rem;
+}
+
+.vertical-dark-screen, .horizontal-dark-screen {
+    position: absolute;
+    z-index: 1;
+}
+
+.horizontal-dark-screen {
+    width: 333px;
+    height: 190px;
+    margin: 13px 95px;
+}
+
+.vertical-dark-screen {
+    margin: 64px 0px 0px 47px;
+    width: 190px;
+    height: 335px;
+}
+
+.off {
+    background-color: black;
+}
+
+/*js elements style*/
+.modal-window {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 1020px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.pop-up {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    min-height: 250px;
+    background-color: #d6564f;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 15px;
+    color: #f0d8d9;;
+    font-family: Lato-Regular;
+    font-size: 1.6rem;
+}
+
+.close-button {
+    margin: 0 auto;
 }

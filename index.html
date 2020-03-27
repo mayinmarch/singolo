@@ -9,28 +9,39 @@
 </head>
 
 <body>
-    <header class="header" id="home">
+    <header class="header" >
+        <div class='header_wrapper'>
         <div class=logo>
             <h1>Singolo</h1>
             <span class="logo__content">Singolo</span>
         </div>
         <nav class="header__navigation">
             <ul class="navigation navigation__horizontal">
-                <li class="navigation__link"><a href="#home" class="nav__link">home</a></li>
+                <li class="navigation__link active"><a href="#home" class="nav__link">home</a></li>
                 <li class="navigation__link"><a href="#services" class="nav__link">services</a></li>
                 <li class="navigation__link"><a href="#portfolio" class="nav__link">portfolio</a></li>
                 <li class="navigation__link"><a href="#about" class="nav__link">about</a></li>
                 <li class="navigation__link"><a href="#contact" class="nav__link">contact</a></li>
             </ul>
         </nav>
+        </div>
     </header>
-    <section class="slider">
+    <section class="slider" id="home">
         <div class="wrapper slider__wrapper">
             <div class="arrow arrow-left">
             </div>
             <div class="slider_picture">
-                <img src="assets/phone_vertical.png" alt="vertical phone">
-                <img src="assets/phone_horizontal.png" alt="horizontal phone">
+                <div class='v-phone-container'>
+                    <div class='vertical-dark-screen'></div>
+                    <img class='vertical-phone' src="assets/phone_vertical.png" alt="vertical phone">
+                    
+                </div>
+                <div class='h-phone-container'>
+                    <div class="horizontal-dark-screen"></div>
+                    <img class='horizontal-phone' src="assets/phone_horizontal.png" alt="horizontal phone">
+                    
+                </div>
+                
             </div>
             <div class="arrow arrow-right">
 
@@ -130,7 +141,7 @@
                 ligula, eget lacinia odio sem nec elit.</p>
             <div class="portfolio__navigation">
                 <ul class="porfolio__links navigation__horizontal">
-                    <li class="portfolio__link">All</li>
+                    <li class="portfolio__link link__selected">All</li>
                     <li class="portfolio__link">Web Design</li>
                     <li class="portfolio__link">Graphic Design</li>
                     <li class="portfolio__link">Artwork</li>
@@ -317,11 +328,11 @@
                         <div class="contact-us layout-1-column">
                             <input type="text" name="name" required placeholder="Name (Required)">
                             <input type="email" name="email" required placeholder="Email (Required)">
-                            <input type="text" name="subject" placeholder="Subject">
-                            <textarea name="question" placeholder="Describe your project in detail..."></textarea>
+                            <input class="subject" type="text" name="subject" placeholder="Subject">
+                            <textarea class="mail-description" name="question" placeholder="Describe your project in detail..."></textarea>
                         </div>
                         <div class="contact-us__button">
-                            <button type="submit" class="button button_colored">Send</button>
+                            <button type="submit" class="submit-button button_colored">Send</button>
                         </div>
                     </form>
                 </div>
@@ -388,6 +399,8 @@
             </li>
         </ul>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
