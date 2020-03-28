@@ -37,6 +37,10 @@ body {
     padding: 0;
 }
 
+.hamburger {
+    display: none;
+}
+
 h1 {
     color: #2d303a;
     font-size: 0.01rem;
@@ -53,6 +57,10 @@ h2 {
 h3 {
     font-family: Lato-Black, Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
+}
+
+p {
+    text-align: justify;
 }
 
 a {
@@ -214,10 +222,6 @@ a:visited {
     background-image: url(assets/chev_right_hover.png);
 }
 
-.arow-left:hover {
-    background-image: url(assets/chev_left_hover.svg);
-}
-
 .description, .about-us {
     background-color: #f2f2f2;
 }
@@ -289,7 +293,7 @@ a:visited {
 
 .portfolio-work-container {
     height: 603px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .portfolio__link {
@@ -307,7 +311,7 @@ a:visited {
     border-color: white;
 }
 
-.porfolio-work {
+.portfolio-work {
     border: 5px solid rgba(255,255,255,0);
 }
 
@@ -410,7 +414,8 @@ a:visited {
     resize: none;
 }
 
-.contact-us__form input::placeholder, .contact-us__form textarea::placeholder {
+.contact-us__form input::placeholder, 
+.contact-us__form textarea::placeholder {
     color: #f48c8f;
 }
 
@@ -471,6 +476,8 @@ a:visited {
     font-size: 1.2rem;
 }
 
+/*js elements style*/
+
 .vertical-dark-screen, .horizontal-dark-screen {
     position: absolute;
     z-index: 1;
@@ -492,7 +499,6 @@ a:visited {
     background-color: black;
 }
 
-/*js elements style*/
 .modal-window {
     position: fixed;
     display: flex;
@@ -522,4 +528,120 @@ a:visited {
 
 .close-button {
     margin: 0 auto;
+}
+
+/*responsive*/
+@media screen and (max-width: 768px){
+    
+    body {
+        width: 768px;
+    } 
+
+    header {
+        height: 95px;
+    }
+
+    .header_wrapper {
+        width: 688px;
+    }
+
+    .navigation {
+        font-size: 1.2rem;
+    }
+
+    .slider__wrapper {
+        padding: 45px 29px 36px;
+    }
+
+    .slider_picture {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider_picture img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .vertical-phone {
+        height: 368px;
+        padding:0 0 0 25px;
+    }    
+
+    .horizontal-phone {
+        width: 366px;
+        height: 184px;
+        padding: 0 25px 0 0;
+    }
+
+    .vertical-dark-screen {
+        margin: 48px 0px 0px 10px;
+        width: 146px;
+        height: 257px;
+    }
+    .horizontal-dark-screen {
+        width: 257px;
+        height: 146px;
+        margin: 10px 43px;
+    }
+
+    .description .wrapper {
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+
+    .our-services__description {
+        margin-bottom: 0;
+    }
+
+    .services-container {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5rem;
+        grid-row-gap: 4rem;
+    }
+
+    .service {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .portfolio__link {
+        margin-bottom: 28px;
+    }
+
+    .portfolio-work {
+        width: 216px;
+        height: 184px;
+    }
+
+    .employee__photo {
+        width: 219px;
+    }
+
+    .portfolio .wrapper {
+        padding-bottom: 73px;
+    }
+
+    .portfolio-work-container {
+        height: 794px;
+    }
+
+    .contact-us__form form{
+        width: 442px;
+    }
+    
+    .contact-us__button .submit-button {
+        background-color: #FBC65F;
+        color: #886A30;
+        width: 136px;
+        height: 38px;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        text-transform: uppercase;
+        font-family: Lato-Bold;
+    }
+
 }

@@ -49,7 +49,10 @@ const changePhoneState = () => {
 }
 
 
+// shuffle pictures and change links state
+
 const portfolioLinks = document.querySelectorAll('.portfolio__link');
+
 const addPortfolioLinkClass = (elem) => {
        elem.classList.add('selected');
 }
@@ -57,12 +60,8 @@ const removePortfolioLinkClass = (elem) => {
      elem.classList.remove('selected'); 
 }
 
-
-// shuffle pictures and change links state
-
-
 const addLinksClickHandler = () => {
-    document.querySelector('.porfolio__links').addEventListener('click', (e) => {
+    document.querySelector('.portfolio__links').addEventListener('click', (e) => {
         if(e.target.classList.contains('portfolio__link')){
             let clickedLink = e.target;
             if(!clickedLink.classList.contains('link__selected')){
@@ -85,7 +84,7 @@ const selectClickedLink = (link) => {
 }
 
 const shufflePictures = () => {   
-    let pictures = document.querySelectorAll('.porfolio-work__block');
+    let pictures = document.querySelectorAll('.portfolio-work__block');
     let picturesWrapper = document.querySelector('.portfolio-work-container');
     let shuffleWrapper = [];
     pictures.forEach(elem => {
@@ -106,7 +105,7 @@ const shufflePictures = () => {
 const addPictureClickHandler = () => {
     document.querySelector('.portfolio-work-container').addEventListener('click', (e) => {
         console.log(e.target);
-        if(e.target.classList.contains('porfolio-work')){
+        if(e.target.classList.contains('portfolio-work')){
             let clickedPicture = e.target;
             removeSelectedPicture();
             selectClickedPicture(clickedPicture);
@@ -115,7 +114,7 @@ const addPictureClickHandler = () => {
 }
 
 const removeSelectedPicture = () => {
-    let pictures = document.querySelectorAll('.porfolio-work');
+    let pictures = document.querySelectorAll('.portfolio-work');
     pictures.forEach((picture => {
         if(picture.classList.contains('work-selected')){
             picture.classList.remove('work-selected');
@@ -133,8 +132,13 @@ const formSubmitHandler = () => {
     let submitButton = document.querySelector('.submit-button');
     submitButton.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('clicked');
-        createModalWindow();
+        let mail = document.querySelector('.email');
+        let name = document.querySelector('.name');
+        if(mail.validity.valid && name.validity.valid){
+            createModalWindow();
+        } else {
+            alert('invalid name or email');
+        }        
     })
 } 
 
