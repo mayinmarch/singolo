@@ -645,3 +645,137 @@ a:visited {
     }
 
 }
+
+@media screen and (max-width: 375px) {
+
+    body {
+        width: 375px;
+    }
+
+    .wrapper {
+        padding: 30px 30px;
+    }
+
+    .header_wrapper {
+        width: 375px;
+        padding: 0;
+    }
+
+
+    .logo {
+        padding-right: 125px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        height: 2rem;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+
+    .hamburger .dash {
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        border-radius: 1px;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+
+    .slider__wrapper {
+        padding: 20px 10px;
+    }
+
+    .slider_picture {
+        width: 298px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slider_picture img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .vertical-phone {
+        height: 178px;
+        padding:0 0 0 27px;
+    }    
+
+    .horizontal-phone {
+        width: 178px;
+        height: 88px;
+    }
+
+    .vertical-dark-screen {
+        margin: 23px 0px 0px 5px;
+        width: 70px;
+        height: 124px;
+    }
+    .horizontal-dark-screen {
+        width: 124px;
+        height: 70px;
+        margin: 5px 21px;
+    }
+
+    .arrow {
+        height: 25px;
+    }
+
+    .services-container {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-column-gap: 5rem;
+        grid-row-gap: 4rem;
+    }
+
+    .portfolio-work-container {
+        height: 555px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+
+    .portfolio-work {
+        width: 151px;
+        height: 128px;
+    }
+
+    .emloyee-container {
+        flex-direction: column;;
+    }
+
+    .employee__photo {
+        width: 314px;
+        height: 314px;
+    }
+
+    .employee__content, .contact-us__form form {
+        width: 315px;
+    }
+
+    .contact-info {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .contact-us__button .submit-button {
+        border-radius: 5px;
+        width: 315px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .footer-copyright {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+}
