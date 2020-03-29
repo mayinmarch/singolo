@@ -553,6 +553,31 @@ a:visited {
 
 /*responsive*/
 
+@media screen and (max-width: 1980px){
+    .slide {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .arrow {
+        position: absolute;
+        z-index: 1;
+        margin: 0 40px;        
+    }
+    
+    .arrow-left {
+        left: 0;
+    }
+    
+    .arrow-right {
+        right: 0;
+    }
+}
+
+
 @media screen and (max-width: 1020px){
 
 .arrow {
@@ -896,28 +921,4 @@ a:visited {
         font-size: 2.4rem;
     }
 
-}
-
-@media screen and (min-width: 1021px){
-    .slide {
-        display: none;
-    }
-
-    .visible {
-        display: block;
-    }
-
-    .arrow {
-        position: absolute;
-        z-index: 1;
-        margin: 0 40px;
-    }
-    
-    .arrow-left {
-        left: 15%;
-    }
-    
-    .arrow-right {
-        right: 15%;
-    }
 }
