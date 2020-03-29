@@ -122,6 +122,7 @@ a:visited {
     background-color: #2d303a;
     border-color: #323746;
     position: fixed;
+    z-index: 2;
 }
 
 .header__navigation {
@@ -187,16 +188,34 @@ a:visited {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 52px 40px 60px;
+    padding: 0;
 }
 
 .slider_picture {
+    padding: 45px 29px 36px;
+    height: 100%;
     display: flex;
     align-items: center; 
+    justify-content: space-around;
 }
 
 .slider_picture img {
     margin: 0 35px;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+.slides {
+    width: 100%;
+}
+
+.phones {
+
+    background-color: #f06c64;;
+    display: flex;
+    justify-content: center;
 }
 
 .arrow {
@@ -533,6 +552,36 @@ a:visited {
 }
 
 /*responsive*/
+
+@media screen and (max-width: 1020px){
+
+.arrow {
+    position: absolute;
+    z-index: 1;
+    margin: 0 40px;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.visible {
+    display: block;
+}
+
+
+
+}
+
+
 @media screen and (max-width: 768px){
     
     body {
@@ -543,8 +592,11 @@ a:visited {
         height: 95px;
     }
 
+    
+
     .header_wrapper {
         width: 688px;
+        
     }
 
     .navigation {
@@ -552,14 +604,9 @@ a:visited {
     }
 
     .slider__wrapper {
-        padding: 45px 29px 36px;
+        padding: 0;
     }
 
-    .slider_picture {
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-    }
 
     .slider_picture img {
         margin: 0;
@@ -659,6 +706,7 @@ a:visited {
     }
 
     .header_wrapper {
+        position: relative;
         width: 375px;
         padding: 0;
     }
@@ -687,15 +735,10 @@ a:visited {
         display: none;
     }
 
-    .slider__wrapper {
+    .slider_picture {
         padding: 20px 10px;
     }
 
-    .slider_picture {
-        width: 298px;
-        display: flex;
-        justify-content: space-between;
-    }
 
     .slider_picture img {
         margin: 0;
@@ -725,6 +768,7 @@ a:visited {
 
     .arrow {
         height: 25px;
+        margin: 0 20px;
     }
 
     .services-container {
@@ -852,4 +896,28 @@ a:visited {
         font-size: 2.4rem;
     }
 
+}
+
+@media screen and (min-width: 1020px){
+    .slide {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .arrow {
+        position: absolute;
+        z-index: 1;
+        margin: 0 40px;
+    }
+    
+    .arrow-left {
+        left: 15%;
+    }
+    
+    .arrow-right {
+        right: 15%;
+    }
 }

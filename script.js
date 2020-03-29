@@ -5,6 +5,7 @@ window.onload = function(){
     addPictureClickHandler();
     formSubmitHandler();
     addHamburgerHandler();
+    changeSlides();
 }
 
 document.addEventListener('scroll', menuScroll);
@@ -227,3 +228,46 @@ const hideMenu = () => {
     document.querySelector('.header_wrapper').classList.remove('opened');
     document.querySelector('.header__navigation').classList.add('closed-menu');
 }
+
+//slider
+
+const changeSlides = () => {
+    let leftArrow = document.querySelector('.arrow-left');
+    let rightArrow = document.querySelector('.arrow-right');
+    let currentSlide = 0;
+    slides = document.querySelectorAll('.slide');
+
+    leftArrow.addEventListener('click', () => {
+        if(currentSlide === 0){
+            currentSlide = slides.length - 1;
+        } else {
+            currentSlide -=1;
+        }
+        showCurrentSlide(currentSlide);
+    })
+
+    rightArrow.addEventListener('click', () => {
+        if(currentSlide >= slides.length -1){
+            currentSlide = 0;
+        } else {
+            currentSlide +=1;
+        }
+        showCurrentSlide(currentSlide);
+    })
+}
+
+const showSlide = (elem) => {
+    elem.classList.add('visible');
+}
+
+const hideSlide = (elem) => {
+    elem.classList.remove('visible');
+}
+
+const showCurrentSlide = (slideNum) => {
+    slides = document.querySelectorAll('.slide');
+    visibleSlide = document.querySelector('.visible');
+    hideSlide(visibleSlide);
+    showSlide(slides[slideNum]);
+}
+

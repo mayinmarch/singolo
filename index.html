@@ -33,23 +33,28 @@
     </header>
     <section class="slider" id="home">
         <div class="wrapper slider__wrapper">
-            <div class="arrow arrow-left">
-            </div>
-            <div class="slider_picture">
-                <div class='v-phone-container'>
-                    <div class='vertical-dark-screen'></div>
-                    <img class='vertical-phone' src="assets/phone_vertical.png" alt="vertical phone">
-                    
+            <div class="slides">
+                <div class="slide phones visible">
+                    <div class="slider_picture">
+                        <div class='v-phone-container'>
+                            <div class='vertical-dark-screen'></div>
+                            <img class='vertical-phone' src="assets/phone_vertical.png" alt="vertical phone">
+                            
+                        </div>
+                        <div class='h-phone-container'>
+                            <div class="horizontal-dark-screen"></div>
+                            <img class='horizontal-phone' src="assets/phone_horizontal.png" alt="horizontal phone">
+                        </div>
+                    </div>
                 </div>
-                <div class='h-phone-container'>
-                    <div class="horizontal-dark-screen"></div>
-                    <img class='horizontal-phone' src="assets/phone_horizontal.png" alt="horizontal phone">
+                <div class="slide">
+                    <img class='slide-img' src="assets/Layer 2.png" alt="slide">
                 </div>
-
             </div>
-            <div class="arrow arrow-right">
+            
+            <div class="arrow arrow-left"></div>
+            <div class="arrow arrow-right"></div>
 
-            </div>
         </div>
     </section>
     <section class="description" id="services">
@@ -333,7 +338,7 @@
                             <input class="name" type="text" name="name" required placeholder="Name (Required)">
                             <input class="email" type="email" name="email" required placeholder="Email (Required)">
                             <input class="subject" type="text" name="subject" placeholder="Subject">
-                            <textarea class="mail-description" name="question" placeholder="Describe your project in detail..."></textarea>
+                            <textarea class="mail-description" name="question" placeholder="Describe your project in detail..." maxlength="400"></textarea>
                         </div>
                         <div class="contact-us__button">
                             <button type="submit" class="submit-button button_colored">Send</button>
