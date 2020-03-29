@@ -4,6 +4,7 @@ window.onload = function(){
     addLinksClickHandler();
     addPictureClickHandler();
     formSubmitHandler();
+    addHamburgerHandler();
 }
 
 document.addEventListener('scroll', menuScroll);
@@ -104,7 +105,6 @@ const shufflePictures = () => {
 
 const addPictureClickHandler = () => {
     document.querySelector('.portfolio-work-container').addEventListener('click', (e) => {
-        console.log(e.target);
         if(e.target.classList.contains('portfolio-work')){
             let clickedPicture = e.target;
             removeSelectedPicture();
@@ -187,5 +187,43 @@ const createPopUp = (elem) => {
     popUpwindow.appendChild(popUpButton);
     popUpButton.addEventListener('click', () => {
         deleteModalWindow();
+        document.querySelector('.contact-form').reset();
     })
+}
+
+// mobile menu 
+
+const addHamburgerHandler = () => {
+    if (window.screen.width <= 375){
+        let burger = document.querySelector('.hamburger');
+        burger.addEventListener('click', () => {
+            if(burger.classList.contains('opened')){
+                hideMenu();
+                burger.classList.remove('opened');
+            }else {
+                burger.classList.add('opened');
+                showMenu();
+                document.querySelector('.navigation').addEventListener('click', (e) => {
+                    if(e.target){
+                        hideMenu();
+                        burger.classList.remove('opened');
+                    }
+                })
+            }
+        })
+    }
+}
+
+const showMenu = () => {
+
+    document.querySelector('header').classList.add('blur');
+    document.querySelector('.header_wrapper').classList.add('opened');
+    document.querySelector('.header__navigation').classList.remove('closed-menu');
+
+}
+
+const hideMenu = () => {
+    document.querySelector('header').classList.remove('blur');
+    document.querySelector('.header_wrapper').classList.remove('opened');
+    document.querySelector('.header__navigation').classList.add('closed-menu');
 }
